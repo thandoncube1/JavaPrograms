@@ -20,8 +20,8 @@ public class Sample {
   }
 
   public static void main(String[] args) {
-    fetchAsync("Sample.java")
-      .thenApply(text -> text.length())
+    fetchAsync("main.txt")
+      .thenApply(text -> text)
       .thenAccept(System.out::println)
       .exceptionally(err -> handleException(err))
       .join();
@@ -41,3 +41,6 @@ public class Sample {
 // If your code is imperative it turns into a monster and if its sequential it is beautiful.
 //
 // -- Virtual Threads - are super light weight threads
+//
+// -- Running on the cloud can be for availability instead of scalability
+// -- Especially when dealing with small businesses.
