@@ -1,4 +1,4 @@
-package designpatterns_new.patterns_antipattern;
+package Designpatterns_new.patterns_antipattern;
 
 import java.util.*;
 

@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class Sample_Switch {
   public static String process(int input) {

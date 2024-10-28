@@ -1,5 +1,3 @@
-import java.util.*;
-
 
 class Person {
   private String firstName;
@@ -20,7 +18,7 @@ public class Sample_Data {
     // records are immutable data class
     // A record cannot inherit from anything.
     // Records are final by specification. You may implement interfaces
-    
+
     Person person = new Person("Thando", "Ncube");
     String message = "This is my name (f) and my last name is (l)";
       message.replace("(f)", person.getFirstName().toString());
