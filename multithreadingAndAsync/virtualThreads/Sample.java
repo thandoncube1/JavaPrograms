@@ -1,4 +1,5 @@
-import java.util.concurrent.*;
+package virtualThreads;
+
 import java.nio.file.*;
 
 public class Sample {
@@ -26,7 +27,9 @@ public class Sample {
       Thread.startVirtualThread(() -> fetch(index, "main.txt"));
     }
 
-    try { Thread.sleep(5000); } catch(Exception ex) {}
+    try { Thread.sleep(5000); } catch(Exception ex) {
+      System.out.println(ex.getMessage());
+    }
   }
 }
 
