@@ -1,14 +1,14 @@
 import java.awt.*;
 
 public class MapGenerator {
-    public int map[][];
+    public int[][] map;
     public int brickWidth;
     public int brickHeight;
 
     public MapGenerator(int row, int column) {
         map = new int[row][column];
         for (int [] map1: map) {
-            for (int j = 0; j < map1[0].length; j++) {
+            for (int j = 0; j < map[0].length; j++) {
                 map1[j] = 1;
             }
         }
