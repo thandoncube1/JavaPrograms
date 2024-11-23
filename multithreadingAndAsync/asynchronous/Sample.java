@@ -1,3 +1,5 @@
+package asynchronous;
+
 import java.util.concurrent.*;
 import java.nio.file.*;
 
@@ -23,7 +25,7 @@ public class Sample {
     fetchAsync("main.txt")
       .thenApply(text -> text)
       .thenAccept(System.out::println)
-      .exceptionally(err -> handleException(err))
+      .exceptionally(Sample::handleException)
       .join();
   }
 }
